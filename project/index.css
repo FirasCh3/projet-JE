@@ -1,0 +1,236 @@
+body{
+    background: linear-gradient(to bottom, #660066 0%, #0000cc 129%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    height: 100%;
+}
+.html{
+    height: 100%;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+.logo2{
+    width: 500px;
+    animation-name: rotating-logo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    
+}
+.header>div{
+    flex-basis: 33.33%;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.research-logo{
+    width:70px;
+    animation-name: logo-drop;
+    animation-duration: 1s;
+    float: right;
+    
+    
+
+    
+}
+.lights-container{
+    
+    width: 500px;
+    
+}
+.lights{
+    
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+.small-lights{
+    width: 4vw;
+    position: absolute;
+    height: 4vw;
+    background-color:rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    left: 20px;
+    top: 90px;
+}
+.light_box{
+    position: absolute;
+    background:linear-gradient(to bottom,white,rgba(255, 255, 255, 0));
+    width: 530px;
+    height: 500px;
+    rotate: -50deg;
+    bottom: 450px;
+    left: -280px;
+    
+}
+@keyframes logo-drop{
+    from{
+        opacity: 0%;
+        transform: translateY(-1000px);
+    }
+    to{
+        
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+@keyframes rotating-logo {
+    0%{
+        transform: rotateZ(0deg);
+        
+    }
+    50%{
+        transform: rotateZ(5deg);
+        
+    }
+    75%{
+        transform: rotateZ(1deg);
+    }
+    100%{
+        transform: rotateZ(-2deg);
+    }
+}
+.research-logo:hover{
+    cursor: pointer;
+    
+}
+.games-container{
+    margin-top: 200px;
+    margin-left: 50px;
+}
+.games{
+    
+    
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3,100px);
+    gap: 200px;
+    
+}
+.games>img{
+    width: 300px;
+    margin-top: 10px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 50px;
+    transition: transform 0.5s;
+    grid-area: "A";
+    box-shadow: 3px 3px 3px 3px rgb(0 0 0 / 40%);
+    
+}
+.games>img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.facts-box{
+    
+    background-color: darkmagenta;
+    max-width: 1200px;
+    width:auto ;
+    height: auto;
+    margin:50px 0 0 50px ;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px 15px rgb(0 0 0 / 40%);
+    font-size: 30px;
+    user-select: none;
+}
+
+.facts-box:hover{
+    cursor: pointer;
+}
+.friv-daily{
+    
+   
+    width: 1200px;
+    margin:30px 0 0 50px ;
+}
+.friv-daily>div{
+    
+   display: flex;
+   justify-content: center;
+    
+    background-color: #c06;  
+    font-size: 50px;
+    user-select: none;
+    
+}
+.first-element{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.first-element>p{
+    margin: 0;
+    font-family: frivFont, arial, helvetica, sans-serif;
+}
+.third-element{
+    flex-direction: column;
+    align-items: center;
+}
+.fourth-element{
+    flex-direction: column;
+    align-items: center;
+}
+.fourth-element>p{
+    margin: 0;
+    font-family: frivFont, arial, helvetica, sans-serif;
+}
+.footer{
+    margin-top: 500px;
+}
+.line{
+    width: 100%;
+    background-color: magenta;
+    animation-name: line-color-changer;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: 20px;
+    animation-direction: alternate-reverse;
+    border-top:3px white solid;
+    border-bottom: 3px white solid;
+}
+
+.footer-text{
+    font-family:frivFont, arial, helvetica, sans-serif;
+    font-size: 3.5vmin;
+    text-align: center;
+    color: white;
+}
+.policy{
+    color: #aaf;
+    transition: color 0.7s;
+    text-decoration: none;
+}
+.policy:hover{
+    color: #7ff;
+    cursor: pointer;
+}
+@keyframes line-color-changer {
+    0%{background-color: #00b300;}
+    25%{background-color: #00bfff;
+    }
+    50%{
+        background-color: #cc66ff;
+    }
+    75%{
+        background-color:  #ff0066;
+    }
+    100%{
+        background-color: #5500ff;
+    }
+    
+}

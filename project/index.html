@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friv</title>
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body onload="setdate();generate_quote();generate_limerick()">
+    
+    <div class="header">
+        <div class="lights-container">
+            <div class="lights">
+            </div>
+            <div class="small-lights"></div>
+            <div class="light_box"></div>
+        </div>
+        <div class="logo">
+            <img src="logo.png" class="logo2">
+        </div>
+        <div class="research">
+            <img src="research.png" class="research-logo">
+        </div>
+        </div>
+        <div class="games-container">
+        <div class="games">
+            <img src="game1.png">
+            <img src="game2.png">
+            <img src="game3.png">
+            <img src="game4.png">
+
+        </div>
+        <div class="games">
+            <img src="game5.png">
+            <img src="game6.png">
+            <img src="game7.png">
+            <img src="game8.png">
+        </div>
+        <div class="games">
+            <img src="game9.png">
+            <img src="game10.png">
+            <img src="game11.png">
+            <img src="game12.png">
+        </div>
+        <div class="games">
+            <img src="game13.png">
+            <img src="game14.png">
+            <img src="game15.png">
+            <img src="game16.png">
+        </div>
+    </div>
+    <div class="facts-box" id="facts-box" onclick="changetext()">
+        <p id="paragraph1">"Fascinating Frivolous Fact For Fanatical Friv Fans 1/16 (click for next)</p>
+        <p id="paragraphs"></p>
+    </div><br>
+    <div class="friv-daily">
+        <div class="first-element">
+            😃
+            FRIV DAILY
+            😆
+            
+            <p id="date" class="flex-item"></p>
+        </div>
+        <hr>
+        <div>
+            🎶
+            <p id="music_button" style="margin: 0; font-family:frivFont, arial, helvetica, sans-serif;;" onclick="play_song()">tap to play daily chiptune</p>
+            <audio src="chiptune.mp3" id="music"></audio>
+        </div>
+        <hr>
+        <div class="third-element">
+            💬
+            Daily famous quote<br>
+            <p id="quote"></p>
+        </div>
+        <hr>
+        <div class="fourth-element">
+            📜
+            Daily Limerick<br><br>
+            <p id="limerick" class="limerick"></p>
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div class="line"></div><br>
+        <div class="footer-text">Copyright © 2006- 2022 . Friv is a Registered Trademark. All Rights Reserved. This is a genuine Friv site.
+            <br><a href="https://www.friv.com/privacy.html" target="_blank" class="policy">Privacy & Cookies Policy</a><br><br>
+            <a class="policy" target="_blank" href="#">Manage & Revoke Cookie Consent</a><br><br>
+            <a class="policy" target="_blank" href="https://www.friv.com/help.html">Help - About - FAQs - Fakes - Old Friv</a>
+
+        </div>
+
+        
+            <div class="line"></div>
+    </div>
+</body>
+</html>
